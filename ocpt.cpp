@@ -5,7 +5,6 @@
 using namespace std;
 
 #include "perftestrunner.h"
-#include "c1.h"
 #include "c5.h"
 
 template<class C>
@@ -53,7 +52,7 @@ main(int, char*[])
 	for(unsigned n = 0;  n < N_OPS;  ++n)
 		testData.push_back(rand() % 100);
 
-	cout << "sizeofs:  C1:" << sizeof(C1) << "  C2:" << sizeof(C2) <<
+	cout << "sizeofs:  C1:" << sizeof(C1) << "  C5:" << sizeof(C5) <<
 		"  CNV1:" << sizeof(CNV1) << "  CNV5:" << sizeof(CNV5) << endl;
 	PerfTestRunner<vector<int> > runner(N_RUNS, testData, N_OPS);
 	runner.addTestFunc(CreateDepth1Objects, "Depth 1   ");
