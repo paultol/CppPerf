@@ -1,0 +1,15 @@
+/Makefile
+/Makefile.in
+/aclocal.m4
+/autom4te.cache/
+/config.*
+/configure
+/m4/
+/stamp-h?
+/ccpperftest*.tar.gz
+.deps/
+.dirstamp
+*.o
+*~
+.*.swp
+.git
